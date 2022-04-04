@@ -112,8 +112,6 @@ public class MyStepdefs extends BaseTests {
     public void iCanEndTheSession() throws InterruptedException {
         conferencePage.endConference();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //Thread.sleep(1000);
-        //Assert.assertEquals("ADX Connect", driver.getTitle());
         Assert.assertTrue(driver.getTitle().endsWith("Webinar / Conference is over"));
     }
 
